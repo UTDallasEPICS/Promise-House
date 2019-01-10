@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Street Outreach Survey</title>
+<style>
+
+*/renders each line in H1,H3 or Form centered between its margins*/
+H1{text-align:center;}
+H3{text-align:center;}
+Form{text-align:center;}
+
+
+.background{
+  background: url(https://promisehouse.org/wp-content/uploads/2014/01/youth-banner.jpg) 50% 50% no-repeat  fixed;
+  background-size: cover;
+  }
+
+.overlay:before{
+  content:" ";
+  display: block;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(0,191,255,0.45);
+  z-index:-1;
+}
+
+
+
+
+#main-container{
+    background-color: #ffffff;
+    width: 900px;
+    padding: 25px;
+    margin: 25px auto;
+}
+
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 575.98px) {
+    .responsive {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) and and (max-width: 767.98px) {
+    .responsive {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .responsive {background: blue;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px)  {
+    .responsive {background: orange;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .responsive {background: pink;}
+}
+
+ .responsive {
+    padding: 20px;
+    color: white;
+	}
+
+}
+	</head>
+
+</style>
+
+	<body class="background overlay">
+		 <div id="main-container">
+      <form action="/form">
+		  <h1>Street Outreach Follow-Up Survey</h1>
+		  <h4><span style="color: red">Required Questions*</span></h4>
+
+
+        <b>What is your living situation?</b><span style="color: red">*</span><br>
+        <br/>
+		<input type="radio" name="What is your living situation?" value="Living with Parents" required>
+		Living with Parents<br>
+		<input type="radio" name="What is your living situation?" value="Living on the Streets">
+		Living on the Streets<br>
+		<input type="radio" name="What is your living situation?" value="Living with Relatives">
+		Living with Relatives<br>
+		<input type="radio" name="What is your living situation?" value="Living with Girl-Friend">
+		Living with Girl-Friend<br>
+		<input type="radio" name="What is your living situation?" value="Living with Boy-Friend">
+		Living with Boy-Friend<br>
+		<input type="radio" name="What is your living situation?" value="Living back with Adoptive Parents">
+		Living back with Adoptive Parents<br>
+		<input type="radio" name="What is your living situation?" value="Back with Foster Family">
+		Back with foster family<br>
+		<input type="radio" name="What is your living situation?" value="Place to Place/Sofa Surfing">
+		Place to Place/Sofa Surfing<br>
+		<input type="radio" name="What is your living situation?" value="Psychiatric Facility">
+		Psychiatric Facility<br>
+		<input type="radio" name="What is your living situation?" value="Jail/Detention Center">
+		Jail/Detention Center<br>
+		<input type="radio" name="What is your living situation?" value="Detox Facility">
+		Detox Facility<br>
+		<input type="radio" name="What is your living situation?" value="Transitional Living Program">
+		Transitional Living Program<br>
+		<input type="radio" name="What is your living situation?" value="Emergency Shelter">
+		Emergency Shelter<br>
+		<input type="radio" name="What is your living situation?" value="Living Independently">
+		Living Independently<br>
+		<input type="radio" name="What is your living situation?" value="Decline to answer living situation">
+		Decline to answer living situation<br><br>
+
+        <b>Family Conflicts Situation:</b><span style="color: red">*</span><br>
+        <br/>
+		<input type="radio" name="Family Conflicts Situation:" value="Better than before" required>
+		Better than before<br>
+		<input type="radio" name="Family Conflicts Situation:" value="Same as before">
+		Same as before<br>
+		<input type="radio" name="Family Conflicts Situation:" value="Got worse">
+		Got worse<br><br>
+
+        <b>Are you currently in School?</b><span style="color: red">*</span><br>
+        <br/>
+		<input type="radio" name="Are you currently in School?" value="Yes" required>
+		Yes<br>
+		<input type="radio" name="Are you currently in School?" value="No">
+		No<br>
+		<input type="radio" name="Are you currently in School?" value="Enrolled but not started">
+		Enrolled but not started<br><br>
+
+        <b>Are you currently employed?</b><span style="color: red">*</span><br>
+        <br/>
+		<input type="radio" name="Are you currently employed?" value="Yes" required>
+		Yes<br>
+		<input type="radio" name="Are you currently employed?" value="No">
+		No<br>
+		<input type="radio" name="Are you currently employed?" value="Still Looking">
+		Still Looking<br>
+		<input type="radio" name="Are you currently employed?" value="On Disability">
+		On Disability<br><br>
+
+        <b>Are you getting help through any other agencies?</b><span style="color: red">*</span><br>
+        <br/>
+		<input type="radio" name="Are you getting help through any other agencies?" value="Yes" required>
+		Yes: <input type="text" name="Other Agencies Helping Me:"><br>
+		<input type="radio" name="Are you getting help through any other agencies?" value="No">
+		No<br><br>
+
+        <b>Have you had any behavior problems that caused you:</b>           <br>
+        <br/>
+		<input type="checkbox" name="Have you had any behavior problems that caused you:" value="To be arrested">
+		To be arrested<br>
+		<input type="checkbox" name="Have you had any behavior problems that caused you:" value="To lose employment">
+		To lose employment<br>
+		<input type="checkbox" name="Have you had any behavior problems that caused you:" value="N/A">
+		N/A<br><br>
+
+        <b>Have you been homeless in the Past 12 Months?</b><span style="color: red">*</span><br>
+        <br/>
+		<input type="radio" name="Have you been homeless in the Past 12 Months?" value="Yes" required>
+		Yes<br>
+		<input type="radio" name="Have you been homeless in the Past 12 Months?" value="No">
+		No<br>
+		<input type="radio" name="Have you been homeless in the Past 12 Months?" value="Living Situation Stable">
+		Living Situation Stable<br><br>
+
+
+        <b>Did our services help you? Please add any additional comments you'd like to share:</b><span style="color: red">*</span><br>
+        <br/>
+		<input type="radio" name="Did our services help you? Please add any additional comments you'd like to share" value="Yes A Lot"required>
+		Yes, a lot<br>
+		<input type="radio" name="Did our services help you? Please add any additional comments you'd like to share" value="Yes, Some">
+		Yes, some<br>
+		<input type="radio" name="Did our services help you? Please add any additional comments you'd like to share" value="No">
+		No <br>
+		<input type="text" name="How services helped me:"><br><br>
+
+        <b>Did our services help your family? Please add any additional comments you'd like to share:</b><span style="color: red">*</span><br>
+        <br/>
+		<input type="radio" name="Did our services help your family? Please add any additional comments you'd like to share:" value="Yes A Lot" required>
+		Yes, a lot <br>
+		<input type="radio" name="Did our services help your family? Please add any additional comments you'd like to share:" value="Yes Some">
+		Yes, some <br>
+		<input type="radio" name="Did our services help your family? Please add any additional comments you'd like to share:" value="No Famaily Involvement">
+		No family involvement
+		<br>
+		<input type="text" name="How services helped my family:"><br><br>
+
+        <b>Any additional comments?</b>
+		<input type="text" name="Any additional comments?"><br><br>
+		<input type="submit">
+
+		</div>
+
+	</form>
+	</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>General Follow-Up Survey</title>
+<style>
+
+*/renders each line in H1,H3 or Form centered between its margins*/
+H1{text-align:center;}
+H3{text-align:center;}
+Form{text-align:center;}
+
+
+.background{
+  background: url(https://promisehouse.org/wp-content/uploads/2014/01/Promise-House-Exterior-for-Website-1024x768.jpg) 50% 50% no-repeat  fixed;
+  background-size: cover;
+  }
+
+.overlay:before{
+  content:" ";
+  display: block;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(255,165,0,0.45);
+  z-index:-1;
+}
+
+
+
+
+#main-container{
+    background-color: #ffffff;
+    width: 900px;
+    padding: 25px;
+    margin: 25px auto;
+}
+
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 575.98px) {
+    .responsive {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) and and (max-width: 767.98px) {
+    .responsive {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .responsive {background: blue;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px)  {
+    .responsive {background: orange;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .responsive {background: pink;}
+}
+
+ .responsive {
+    padding: 20px;
+    color: white;
+	}
+
+}
+	</head>
+
+</style>
+
+	<body class="background overlay">
+		<div id="main-container">
+
+	<form action="/form">
+	<h1>General Follow-Up Survey</h1>
+	<h4><span style="color: red">Required Questions*</span></h4>
+	<fieldset>
+		<legend><b>SCHOOL</b></legend>
+
+		What school are you attending?<span style="color: red">*</span><br>
+		<input type = "radio" name="What school are you attending?" value="High school" required>
+		High school <br>
+		<input type = "radio" name="What school are you attending?" value="Vocation school">
+		Vocation school<br>
+		<input type = "radio" name="What school are you attending?" value="G.E.D.">
+		G.E.D.<br>
+		<input type = "radio" name="What school are you attending?" value="College">
+		College<br>
+		<input type = "radio" name="What school are you attending?" value="Not attending school">
+		Not attending school<br>
+		<input type = "radio" name="What school are you attending?" value="Unknown">
+		Unknown<br>
+		<input type = "radio" name="What school are you attending?" value="Armed services">
+		Armed services<br>
+		<input type = "radio" name="What school are you attending?" value="Job Corp">
+		Job Corp<br><br>
+
+		If not attending school, why?<span style="color: red">*</span><br>
+		<input type = "radio" name="If not attending school, why?" value="Graduated" required>
+		Graduated<br>
+		<input type = "radio" name="If not attending school, why?" value="Dropped out">
+		Dropped out<br>
+		<input type = "radio" name="If not attending school, why?" value="Suspended">
+		Suspended<br>
+		<input type = "radio" name="If not attending school, why?" value="School refused">
+		School refused<br>
+		<input type = "radio" name="If not attending school, why?" value="Stopped for a job">
+		Stopped for a job<br>
+		<input type = "radio" name="If not attending school, why?" value="In another placement">
+		In another placement<br>
+		<input type = "radio" name="If not attending school, why?" value="Unknown">
+		Unknown<br>
+		<input type = "radio" name="If not attending school, why?" value="Other">
+		Other<br><br>
+
+		If attending school, how are you doing?<span style="color: red">*</span><br>
+		<input type = "radio" name="If attending school, how are you doing?" value="Poor" required>
+		Poor<br>
+		<input type = "radio" name="If attending school, how are you doing?" value="Okay">
+		Okay<br>
+		<input type = "radio" name="If attending school, how are you doing?" value="Very good">
+		Very good<br><br>
+
+		Are you involved in any special activities?(Check all that apply)<br>
+		<input type = "checkbox" name="Are you involved in any special activities?" value="Counseling" >
+		Counseling<br>
+		<input type = "checkbox" name="Are you involved in any special activities?" value="Sports">
+		Sports<br>
+		<input type = "checkbox" name="Are you involved in any special activities?" value="Outside clubs">
+		Outside clubs<br><br>
+
+		Have you had any trouble since returning to school?(Check all that apply)<br>
+		<input type = "checkbox" name="Have you had any trouble since returning to school?" value="Academic">
+		Academic<br>
+		<input type = "checkbox" name="Have you had any trouble since returning to school?" value="Behavioral">
+		Behavioral<br>
+		<input type = "checkbox" name="Have you had any trouble since returning to school?" value="Financial">
+		Financial<br><br>
+	</fieldset>
+	<fieldset>
+		<legend><b>EMPLOYMENT</b></legend>
+		Do you have a job right now?<span style="color: red">*</span><br>
+		<input type = "radio" name="Do you have a job right now?" value="Full-time" required>
+		Full-time<br>
+		<input type = "radio" name="Do you have a job right now?" value="Part-time">
+		Part-time<br>
+		<input type = "radio" name="Do you have a job right now?" value="Odd jobs">
+		Odd jobs<br>
+		<input type = "radio" name="Do you have a job right now?" value="Other">
+		Other<br><br>
+
+		If employed, how are you doing?<span style="color: red">*</span><br>
+		<input type="radio" name="If employed, how are you doing?" value="Poor" required>
+		Poor<br>
+		<input type="radio" name="If employed, how are you doing?" value="Okay">
+		Okay<br>
+		<input type="radio" name="If employed, how are you doing?" value="Very good">
+		Very good<br>
+		<input type="radio" name="If employed, how are you doing?" value="N/A">
+		N/A<br><br>
+
+		Are you having any problems on the job?(Check all that apply)<br>
+		<input type="checkbox" name="Are you having any problems on the job?" value="Trouble working with others">
+		Trouble working with others<br>
+		<input type="checkbox" name="Are you having any problems on the job?" value="Don't get along with boss">
+		Don't get along with boss<br>
+		<input type="checkbox" name="Are you having any problems on the job?" value="Don't like job">
+		Don't like job<br>
+		<input type="checkbox" name="Are you having any problems on the job?" value="Other">
+		Other<br><br>
+	</fieldset>
+
+	<fieldset>
+		<legend><b>COMMUNITY ADJUSTMENT</b></legend>
+		Where are you living right now?<span style="color: red">*</span><br>
+		<input type="radio" name="Where are you living right now?" value="Parents" required>
+		Parents<br>
+		<input type="radio" name="Where are you living right now?" value="Relatives">
+		Relatives<br>
+		<input type="radio" name="Where are you living right now?" value="Own place">
+		Own place<br>
+		<input type="radio" name="Where are you living right now?" value="Group home">
+		Group home<br>
+		<input type="radio" name="Where are you living right now?" value="Foster home">
+		Foster home<br>
+		<input type="radio" name="Where are you living right now?" value="Halfway house">
+		Halway house<br>
+		<input type="radio" name="Where are you living right now?" value="State Juvenile">
+		State Juvenile<br>
+		<input type="radio" name="Where are you living right now?" value="Private Juvenile">
+		Private Juvenile<br>
+		<input type="radio" name="Where are you living right now?" value="Psychiatric unit">
+		Psychiatric unit<br>
+		<input type="radio" name="Where are you living right now?" value="Correctional facility">
+		Correctional facility<br>
+		<input type="radio" name="Where are you living right now?" value="Spouse/Partner">
+		Spouse/Partner<br>
+		<input type="radio" name="Where are you living right now?" value="Other">
+		Other<br><br>
+
+		Type of Placement:<span style="color: red">*</span> <br>
+		<input type="radio" name="Type of Placement:" value="Temporary" required>
+		Temporary<br>
+		<input type="radio" name="Type of Placement:" value="Permanent">
+		Permanent<br><br>
+
+		Have you had any other trouble since leaving the Program?(Check all that apply)<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Regressed to Old Behavior">
+		Regressed to old behavior<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Truant from School/Placement">
+		Truant from school/placement<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Associating with Old Peer Group">
+		Associating with old peer group<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Have been Arrested">
+		Have been arrested<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Problems with Biological Family">
+		Problems with biological family<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="In Another Placement">
+		In another placement<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Multiple Changes in Placement">
+		Multiple changes in placement<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Abused/Abusive">
+		Abused/Abusive<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Involved in Drugs/Alcohol">
+		Involved in drugs/alcohol<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Unplanned Pregnancy/Parenting of a Child">
+		Unplanned pregnancy/parenting of a child<br>
+		<input type="checkbox" name="Have you had any other trouble since leaving the Program?" value="Other">
+		Other<br><br>
+	</fieldset>
+
+	<fieldset>
+		<legend><b>GENERAL INFORMATION</b></legend>
+		Age:<span style="color: red">*</span>
+		<input type="number" name="Age:" min="6" max="130" required>
+		<br><br>
+
+		Sex:<span style="color: red">*</span><select name="Sex:" required>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+			</select>
+		<br><br>
+
+		Race(Select all that apply):<br>
+			<input type="checkbox" name="Race:" value="White/Caucasian">
+			White/Caucasian<br>
+			<input type="checkbox" name="Race:" value="Black">
+			Black/African American<br>
+			<input type="checkbox" name="Race:" value="Hispanic/Latino">
+			Hispanic/Latino<br>
+			<input type="checkbox" name="Race:" value="Native American/Alaska Native">
+			Native American/Alaska Native<br>
+			<input type="checkbox" name="Race:" value="Asian/Indian">
+			Asian/Indian<br>
+			<input type="checkbox" name="Race:" value="Native Hawaiian/Pacific Islander">
+			Native Hawaiian/Pacific Islander<br>
+			<input type="checkbox" name="Race:" value="Prefer not to answer">
+			Prefer not to Answer
+
+		<br><br>
+
+		Marital status:<span style="color: red">*</span><select name="Marital Status:" required>
+			<option value="Not Married">Not Married</option>
+			<option value="Married">Married</option>
+			</select>
+		<br><br>
+
+		Are you a parent?<span style="color: red">*</span><br>
+		<input type="radio" name="Are you a parent?" value="Yes" required>
+		Yes<br>
+		<input type="radio" name="Are you a parent?" value="No">
+		No<br><br>
+
+		Number of children:<span style="color: red">*</span><input type="number" name="Number of Children:" min="0" max="40" required><br><br>
+
+		Do you live with your children?<span style="color: red">*</span><br>
+		<input type="radio" name="Do you live with your children?" value="Yes" required>
+		Yes<br>
+		<input type="radio" name="Do you live with your children?" value="No" >
+		No<br>
+		<input type="radio" name="Do you live with your children?" value="N/A" >
+		N/A<br><br>
+
+		Do you have any special needs at this time?<br>
+		Medical<input type="text" name="Medical Needs:" ><br>
+		Emotional<input type="text" name="Emotional Needs:"><br>
+		Other<input type="text" name="Other Needs:"><br>
+		Referral<input type="text" name="Referral:"><br><br>
+
+		What is your monthly income(Dollars)?<span style="color: red">*</span><input type="number" name="What is your monthly income(Dollars)?" min="0" max="100000" required><br><br>
+
+		Sources<input type="text" name="Sources of Income:"><br><br>
+
+		Did our services help you?<span style="color: red">*</span> Please add any additional comments you'd like to share:<br>
+		<input type="radio" name="Did our services help you? Please add any additional comments you would like to share:" value="Yes, A Lot" required>
+		Yes, a lot<br>
+		<input type="radio" name="Did our services help you? Please add any additional comments you would like to share:" value="Yes, Some">
+		Yes, some <br>
+		<input type="radio" name="Did our services help you? Please add any additional comments you would like to share:" value="No">
+		No<br>
+		<input type="text" name="How services helped me:"><br><br>
+
+		Did our services help your family?<span style="color: red">*</span> Please add any additional comments you'd like to share:<br>
+		<input type="radio" name="Did our services help your family? Please add any additional comments you would like to share:" value="Yes, A Lot" required>
+		Yes, a lot<br>
+		<input type="radio" name="Did our services help your family? Please add any additional comments you would like to share:" value="Yes, Some">
+		Yes, some<br>
+		<input type="radio" name="Did our services help your family? Please add any additional comments you would like to share:" value="No Family Involvement">
+		No family involvement<br>
+		<input type="text" name="How services helped my family:"><br><br>
+
+		Would you be willing to volunteer time with present youth?<br>
+		If yes, how?(if no, leave blank):<input type="text" name="Would you be willing to volunteer time with present youth? If yes, how?(Leave blank if no):" ><br><br>
+
+		Are there services that Promise House can help you with now?
+		<input type="textarea" name="Are there services that Promise House can help you with now?">
+	</fieldset>
+		<br><br>
+		<input type = "submit">
+	</input>
+		</form>
+		</div>
+
+		</body>
+</div>
+</html>
